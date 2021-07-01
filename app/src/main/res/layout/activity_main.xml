@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/numberlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginxxxtoplarge"
+            android:layout_marginStart="@dimen/marginmedium"
+            android:layout_marginEnd="@dimen/marginmedium"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="0.5">
+
+            <TextView
+                android:id="@+id/textview_otp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/getotp"
+                android:fontFamily="@font/gilroy_semibold"
+                style="@style/textviewMediumBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textview_enter_phoneno"
+                style="@style/textviewextralargeBlack"
+                android:text="@string/enter_your_phone_number"
+                android:fontFamily="@font/gilroy_extrabold"
+                app:layout_constraintTop_toBottomOf="@+id/textview_otp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textview_code"
+                style="@style/textviewMediumBlack"
+                android:text="@string/country_code"
+                android:layout_marginTop="@dimen/marginsmall"
+                android:padding="@dimen/padingxsmall"
+                android:fontFamily="@font/gilroy_semibold"
+                android:background="@drawable/rounded_rectangle_white"
+                app:layout_constraintTop_toBottomOf="@id/textview_enter_phoneno"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@+id/textview_enter_phoneno"
+                app:layout_constraintStart_toEndOf="@+id/textview_code"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/etPhoneNumber"
+                android:layout_marginStart="@dimen/marginsmall"
+                android:layout_marginTop="@dimen/marginsmall"
+                android:layout_width="0dp"
+                android:maxLength="10"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectangle_white"
+                android:hint="@string/mobile_hint"
+                android:fontFamily="@font/gilroy_semibold"
+                style="@style/textviewMediumBlack"
+                android:inputType="phone"
+                android:padding="@dimen/padingxsmall"
+                android:textColor="@color/black" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/bSendOtp"
+                style="@style/textviewMediumBlack"
+                android:fontFamily="@font/gilroy_semibold"
+                android:layout_marginTop="@dimen/marginmedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectangle_orange"
+                android:text="@string/login"
+                android:padding="@dimen/padingxmedium"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/otplayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginxmedium"
+            android:layout_marginTop="@dimen/marginxxxtoplarge"
+            android:layout_marginStart="@dimen/marginmedium"
+            android:layout_marginEnd="@dimen/marginmedium"
+            android:visibility="gone">
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/textview_mobileno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                tools:text="+9194******46"
+                android:fontFamily="@font/gilroy_semibold"
+                style="@style/textviewSmallBlack"
+                android:drawablePadding="@dimen/padingextrasmall"
+                android:layout_marginTop="@dimen/marginsmall"
+                app:drawableEndCompat="@drawable/ic_edit" />
+
+            <TextView
+                android:id="@+id/textview_enter_otp"
+                style="@style/textviewextralargeBlack"
+                android:text="@string/enter_the_otp"
+                android:fontFamily="@font/gilroy_extrabold"
+                app:layout_constraintTop_toBottomOf="@+id/textview_mobileno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@+id/textview_enter_otp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/etOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginsmall"
+                android:background="@drawable/rounded_rectangle_white"
+                android:hint="@string/enter_otp"
+                android:fontFamily="@font/gilroy_semibold"
+                style="@style/textviewMediumBlack"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="@dimen/padingxsmall"
+                android:textColorHint="@color/black" />
+
+            <TextView
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etOtp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/bLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginmedium"
+                android:padding="@dimen/padingxmedium"
+                android:fontFamily="@font/gilroy_semibold"
+                android:background="@drawable/rounded_rectangle_orange"
+                android:text="@string/login"
+                style="@style/textviewSmallBlack" />
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/marginsmall"
+                android:layout_marginTop="@dimen/marginmedium"
+                android:padding="@dimen/padingxsmall"
+                tools:text="00:59"
+                android:fontFamily="@font/gilroy_semibold"
+                style="@style/textviewSmallBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bLogin"
+                app:layout_constraintTop_toBottomOf="@+id/etOtp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

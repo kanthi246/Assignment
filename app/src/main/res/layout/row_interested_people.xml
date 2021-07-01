@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.google.android.material.imageview.ShapeableImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/imageViewLikes"
+        android:scaleType="fitXY"
+        tools:src="@drawable/ic_person"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.CornerRadiusImageView"
+        android:layout_marginTop="@dimen/marginsmall"
+        android:layout_marginEnd="@dimen/decoration_size"
+        android:layout_marginStart="@dimen/decoration_size"
+        android:layout_marginBottom="@dimen/decoration_size"
+        app:layout_constraintDimensionRatio="H,16:16"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <TextView
+        android:id="@+id/textviewName"
+        tools:text="kanthi, 27"
+        style="@style/textviewlargeWhite"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:fontFamily="@font/gilroy_extrabold"
+        android:layout_marginStart="@dimen/marginsmall"
+        android:layout_marginBottom="@dimen/marginmedium"
+        android:layout_marginEnd="@dimen/marginsmall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

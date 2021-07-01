@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_curved_radius">40dp</dimen>
+    <dimen name="corner_curve_radius">10dp</dimen>
+    <dimen name="stroke">1.5dp</dimen>
+    <dimen name="decoration_size">2dp</dimen>
+
+    <!--text sizes-->
+    <dimen name="ultrasmall">8sp</dimen>
+    <dimen name="textviewten">10sp</dimen>
+    <dimen name="textsizexxxsmall">12sp</dimen>
+    <dimen name="textsizexxsmall">14sp</dimen>
+    <dimen name="textsizeextrasmall">16sp</dimen>
+    <dimen name="textsizesmall">18sp</dimen>
+    <dimen name="textsizemedium">20sp</dimen>
+    <dimen name="textsizelarge">24sp</dimen>
+    <dimen name="textsizelargex">28sp</dimen>
+    <dimen name="textsizeextralarge">32sp</dimen>
+    <dimen name="textsizexxlarge">42sp</dimen>
+    <dimen name="textsizexxxlarge">60sp</dimen>
+
+    <!--margin sizes-->
+    <dimen name="marginextrasmall">4dp</dimen>
+    <dimen name="marginsmall">8dp</dimen>
+    <dimen name="marginxmedium">12dp</dimen>
+    <dimen name="marginmedium">16dp</dimen>
+    <dimen name="marginxlarge">18dp</dimen>
+    <dimen name="marginlarge">24dp</dimen>
+    <dimen name="marginextralarge">32dp</dimen>
+    <dimen name="marginxxlarge">48dp</dimen>
+    <dimen name="marginxxtoplarge">64dp</dimen>
+    <dimen name="marginxxxtoplarge">80dp</dimen>
+
+    <!--pading sizes-->
+    <dimen name="padingextrasmall">4dp</dimen>
+    <dimen name="padingxxsmall">6dp</dimen>
+    <dimen name="padingsmall">8dp</dimen>
+    <dimen name="padingxsmall">10dp</dimen>
+    <dimen name="padingxmedium">12dp</dimen>
+    <dimen name="padingmedium">16dp</dimen>
+    <dimen name="padingxlarge">20dp</dimen>
+    <dimen name="padinglarge">24dp</dimen>
+    <dimen name="padingextralarge">32dp</dimen>
+    <dimen name="padingxxxlarge">200dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

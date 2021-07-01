@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="login">Continue</string>
+    <string name="resendotp">ResendOtp</string>
+    <string name="getotp">Get OTP</string>
+    <string name="enter_your_phone_number">Enter Your \nPhone number</string>
+    <string name="mobile_hint">94******46</string>
+    <string name="country_code">+91</string>
+    <string name="enter_the_otp">Enter the \nOTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="title_activity_dashboard">MainActivity</string>
+    <string name="title_notes">Notes</string>
+    <string name="title_dashboard">Discover</string>
+    <string name="title_matches">Matches</string>
+    <string name="title_profile">Profile</string>
+    <string name="timeout">TimeOut</string>
+    <string name="personal_messages_to_you">Personal messages to you</string>
+    <string name="tap_to_review_50_notes">Tap to review 50+ notes</string>
+    <string name="interested_in_you">Interested In You</string>
+    <string name="premium_members">Premium members can \nview all their likes at once</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="something_wrong">Something went wrong,Please try again</string>
+    <string name="logout">Logout</string>
+    <string name="invalid_otp">Invalid OTP</string>
+    <string name="no_network">No Network</string>
+    <string name="please_enter_mobileno">Please enter mobile number</string>
+    <string name="please_enter_otp">Please enter OTP</string>
+</resources>
